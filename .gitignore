@@ -1,0 +1,19 @@
+# Composer
+/vendor/
+/composer.lock
+
+# phpunit
+/phpunit.xml
+/phpunit.xml.dist
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Application specific
+moodledata/
+config.php
+*.env
