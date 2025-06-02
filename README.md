@@ -39,13 +39,35 @@ This project is a Moodle-based gamification plugin (or custom module) developed 
 
 > **Note:** Never commit your actual `config.php` or sensitive data. Only share config.sample.php.
 
-## Development Workflow
+---
 
-- All development should take place on feature branches following our [contribution guidelines](CONTRIBUTING.md).
-- Branch naming convention:
-    - New feature: `feature/yourname-feature`
-    - Bugfix: `fix/yourname-issue`
-- Create Pull Requests (PRs) to propose changes. At least one code review is required before merging to `main`.
+## Branch Strategy & Development Workflow
+
+- **Main development happens in `feature/yourname-description` branches** (e.g., `feature/alice-login`).
+- **Do NOT commit directly to `main`.**
+- When your feature is ready, open a Pull Request (PR) to `main` and request a review.
+- At least one code review is required before merging to `main`.
+
+### How to start contributing
+
+1. **Clone the repo:**
+    ```bash
+    git clone https://github.com/yyswhsccc/courage-to-act-moodle.git
+    ```
+2. **Switch to your branch:**
+    ```bash
+    git checkout feature/yourname-description
+    ```
+3. **Develop, commit, push** your changes.
+4. **Open a Pull Request (PR) on GitHub** for code review and merging.
+
+**Branch naming convention:**
+- New feature: `feature/yourname-feature`
+- Bugfix: `fix/yourname-issue`
+
+All development should follow our [contribution guidelines](CONTRIBUTING.md).
+
+---
 
 ## Project Structure
 ```
@@ -57,7 +79,6 @@ This project is a Moodle-based gamification plugin (or custom module) developed 
 ├── <your plugin code>
 └── moodledata/ # (gitignored) Moodle's data storage, DO NOT COMMIT
 ```
-
 
 ## Configuration
 
@@ -82,3 +103,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Keep your local `config.php` and any sensitive files **out of version control**.
 - For questions or onboarding new contributors, update this README as the project evolves.
+
