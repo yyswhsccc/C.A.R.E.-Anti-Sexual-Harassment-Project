@@ -2,6 +2,10 @@
 
 Courage to Act - Moodle Gamification Project
 
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+![Issues](https://img.shields.io/github/issues/yyswhsccc/courage-to-act-moodle)
+
 ## Project Overview
 
 This project is a Moodle-based gamification plugin (or custom module) developed for the Courage to Act initiative. The goal is to extend Moodle's learning platform with features that foster engagement, motivation, and positive behavior change.
