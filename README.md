@@ -73,6 +73,22 @@ All development should follow our [contribution guidelines](CONTRIBUTING.md).
 
 ---
 
+## FAQ
+
+**Q: Where do I report bugs or request features?**  
+A: Please open an issue on our [GitHub Issues page](https://github.com/yyswhsccc/courage-to-act-moodle/issues).
+
+**Q: How can I join the project board for task tracking?**  
+A: Contact @yyswhsccc in our team chat, or open an issue requesting access.
+
+**Q: Who do I ask if I’m stuck or need code review?**  
+A: Mention your question in our team chat and tag the relevant reviewer, or leave a comment on your PR.
+
+**Q: Is there a coding style or branching policy I should follow?**  
+A: Yes! See [CONTRIBUTING.md](CONTRIBUTING.md) for branch naming, PR, and review guidelines.
+
+---
+
 ## Project Automation & Kanban Board
 
 This project leverages GitHub Projects to streamline team collaboration and task management:
