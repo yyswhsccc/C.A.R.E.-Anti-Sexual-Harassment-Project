@@ -11,7 +11,7 @@ This project is a Moodle-based gamification plugin (or custom module) developed 
 ### Prerequisites
 
 - PHP 8.x
-- MySQL 8.0+ or MariaDB (compatible with Moodle)
+- MySQL 5.7.24+ or MariaDB (compatible with Moodle)
 - Composer (optional, for dependency management)
 - Moodle 4.x or higher (installed locally or on your server)
 - [MAMP](https://www.mamp.info/en/) / XAMPP / LAMP stack recommended for local development
