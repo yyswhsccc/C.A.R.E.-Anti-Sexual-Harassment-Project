@@ -14,11 +14,16 @@ This project is a Moodle-based gamification plugin (or custom module) developed 
 
 ### Prerequisites
 
-- PHP 8.x
-- MySQL 5.7.24+ or MariaDB (compatible with Moodle)
-- Composer (optional, for dependency management)
-- Moodle 4.x or higher (installed locally or on your server)
+- **Web Server:** Apache or Nginx (recommended), or any stack that supports PHP
+- **PHP:** Version 8.0 or above
+- **Database:** MySQL 5.7.24+, MariaDB 10.2+, or PostgreSQL
+- **Disk Space:** At least 200MB for codebase + 1GB+ for content/uploads (scale as needed)
+- **RAM:** Minimum 512MB (2GB+ recommended for production)
+- **SSL:** Strongly recommended (HTTPS for secure logins)
+- **SMTP:** Required for sending user notifications (password resets, etc.)
 - [MAMP](https://www.mamp.info/en/) / XAMPP / LAMP stack recommended for local development
+
+> For production deployments, consider higher RAM/storage, regular database backups, and secure environment configuration.
 
 ### Installation
 
