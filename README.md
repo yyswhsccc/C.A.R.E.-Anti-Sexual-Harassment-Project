@@ -73,6 +73,35 @@ All development should follow our [contribution guidelines](CONTRIBUTING.md).
 
 ---
 
+## Project Automation & Kanban Board
+
+This project leverages GitHub Projects to streamline team collaboration and task management:
+
+- **Kanban Board:**  
+  We use a Kanban board with four columns: Todo, In Progress, Review, and Done.  
+  [View the board here.](https://github.com/users/yyswhsccc/projects/1)
+
+- **Built-in Automations:**  
+  The board is fully automated:
+    - New issues and PRs are automatically added to **Todo**.
+    - When a PR receives a "changes requested" review, it moves to **Review**.
+    - When a PR is approved, it moves to **Review**.
+    - When a PR is merged or an issue is closed, it moves to **Done**.
+    - Reopened items automatically return to **In Progress**.
+
+**How to use:**
+- Always create or link issues/PRs with the project board.
+- Drag items between columns only when automation is not triggered (e.g., manual tasks).
+- All team members can check the board for the current development status.
+
+**Tip:**  
+This automation ensures a transparent, up-to-date view of the project's progress without manual tracking!
+
+---
+
+You can see and customize the workflows under the Project board settings (Workflows tab).
+
+
 ## Project Structure
 ```
 /
@@ -90,8 +119,8 @@ See `config.sample.php` for all required environment variables and database sett
 
 ## Issue Tracking & Tasks
 
-- Use [GitHub Issues](../../issues) to report bugs, suggest features, or assign tasks.
-- Project management may use [GitHub Projects](../../projects) for Kanban boards and sprint planning.
+- Use [GitHub Issues](https://github.com/yyswhsccc/courage-to-act-moodle/issues) to report bugs, suggest features, or assign tasks.
+- Project management may use [GitHub Projects](https://github.com/users/yyswhsccc/projects/1) for Kanban boards and sprint planning.
 
 ## Contributing
 
