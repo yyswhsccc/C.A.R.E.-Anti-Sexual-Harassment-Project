@@ -1,0 +1,4 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# 每天 04:10 UTC 检查并准备（如无更新会自动跳过）
+10 4 * * * root /usr/local/sbin/moodle_prepare_minor_update.sh >>/var/log/moodle_prepare.cron.log 2>&1

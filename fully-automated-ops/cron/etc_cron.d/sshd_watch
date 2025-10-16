@@ -1,0 +1,1 @@
+*/5 * * * * root pgrep -x sshd >/dev/null || (systemctl restart ssh || systemctl restart sshd)

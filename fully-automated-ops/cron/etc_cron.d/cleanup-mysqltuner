@@ -1,0 +1,4 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+15 4 * * * root /usr/bin/flock -n /var/lock/cleanup-mysqltuner.lock \ find /home/ubuntu -maxdepth 1 -type f -name 'mysqltuner_*.log' -mtime +14 \ -print -delete >> /var/log/moodle/cleanup-mysqltuner.log 2>&1

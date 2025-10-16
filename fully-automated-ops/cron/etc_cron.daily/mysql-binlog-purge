@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+# 用系统维护账户执行，避免权限问题
+mysql --defaults-file=/etc/mysql/debian.cnf -N -e "SHOW VARIABLES LIKE 'log_bin';" | grep -q -i 'ON' || exit 0
+mysql --defaults-file=/etc/mysql/debian.cnf -e "PURGE BINARY LOGS BEFORE DATE(NOW() - INTERVAL 7 DAY);"

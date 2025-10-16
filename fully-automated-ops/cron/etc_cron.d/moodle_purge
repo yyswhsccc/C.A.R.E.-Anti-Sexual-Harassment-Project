@@ -1,0 +1,1 @@
+0 3 * * * www-data /usr/bin/php /var/www/html/moodle/admin/cli/purge_caches.php >> /var/log/moodle/purge_caches.log 2>&1

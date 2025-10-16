@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# 每天 04:10 清理 /home/ubuntu/backups 下超过3天的 moodle 代码包
+10 4 * * * root /usr/bin/flock -n /var/lock/cleanup-moodle-code.lock \ find /home/ubuntu/backups -maxdepth 1 -type f -name 'moodle-code-*.tar.gz' -mtime +3 \ -print -delete >> /var/log/moodle/cleanup.log 2>&1

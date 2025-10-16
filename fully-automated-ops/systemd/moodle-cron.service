@@ -1,0 +1,16 @@
+[Unit]
+Description=Moodle cron
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/html/moodle
+ExecStart=/usr/bin/php /var/www/html/moodle/admin/cli/cron.php
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+
+[Install]
+WantedBy=multi-user.target

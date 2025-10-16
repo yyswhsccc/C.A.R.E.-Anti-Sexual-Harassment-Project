@@ -1,0 +1,4 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# 每天 03:35 清理 3 天前的代码备份（两处目录）
+35 3 * * * root /usr/bin/flock -n /var/lock/cleanup-backups.lock bash -c 'find /home/ubuntu/backups -type f -name "moodle-code-*.tar.gz" -mtime +3 -print -delete; find /var/moodlebackups -type f -name "moodle-code-*.tar.gz" -mtime +3 -print -delete' >> /var/log/moodle/cleanup-backups.log 2>&1

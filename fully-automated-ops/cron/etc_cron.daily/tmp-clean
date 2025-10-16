@@ -1,0 +1,7 @@
+#!/bin/bash
+# /tmp：清理 >3 天的普通文件，和 >3 天的空目录
+find /tmp -xdev -mindepth 1 -type f -mtime +3 -not -path '/tmp/systemd-private-*/*' -print -delete 2>/dev/null || true
+find /tmp -xdev -mindepth 1 -type d -empty -mtime +3 -not -path '/tmp/systemd-private-*' -print -delete 2>/dev/null || true
+# /var/tmp：更保守，>7 天
+find /var/tmp -xdev -mindepth 1 -type f -mtime +7 -print -delete 2>/dev/null || true
+find /var/tmp -xdev -mindepth 1 -type d -empty -mtime +7 -print -delete 2>/dev/null || true

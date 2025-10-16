@@ -1,0 +1,19 @@
+[Unit]
+Description=Daily Moodle audit and email
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/default/daily_audit
+Environment="EMAIL_FROM_NAME=Moodle Notifier"
+Environment="EMAIL_FROM=courage2act.notify@gmail.com"
+Environment="EMAIL_PASS=bgnervlqydpxuehp"
+Environment="SMTP_HOST=smtp.example.com"
+Environment="SMTP_PORT=587"
+Environment="REGION=ca-central-1"
+Environment="FUNC=ls-autoheal-CouragetoactMoodleVersion2"
+# 逗号分隔的收件人
+Environment="RECIPIENTS_CSV=yuyongshan573@gmail.com"
+ExecStart=/usr/local/sbin/daily_audit.sh
+# 另外也把输出追加到日志文件
+StandardOutput=append:/var/log/moodle/daily_audit.log
+StandardError=append:/var/log/moodle/daily_audit.log

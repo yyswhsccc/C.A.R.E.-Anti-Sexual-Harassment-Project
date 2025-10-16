@@ -1,0 +1,3 @@
+CRON_TZ=America/Edmonton
+# 低优先级运行，避免打扰业务
+35 3 * * * root nice -n 10 ionice -c3 /usr/local/sbin/moodle_autocare.sh

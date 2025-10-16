@@ -1,0 +1,5 @@
+[Unit]
+Description=Run panic_guard (last-resort restart)
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/panic_guard.sh

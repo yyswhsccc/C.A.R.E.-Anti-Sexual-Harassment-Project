@@ -1,0 +1,20 @@
+source_path,repo_path,md5,firstline
+/opt/moosh/provision/setup.sh,fully-automated-ops/scripts/opt/moosh/provision/setup.sh,2f4e663a8bca0548db3da27a5cd6e46c,#!/bin/bash
+/usr/local/sbin/net_guard.sh,fully-automated-ops/scripts/usr/local/sbin/net_guard.sh,2604ec6185a97737488153b357430bd8,#!/usr/bin/env bash
+/usr/local/sbin/wait_net.sh,fully-automated-ops/scripts/usr/local/sbin/wait_net.sh,ebe8cba0fe1cea29be10ddee490f78f4,#!/usr/bin/env bash
+/usr/local/sbin/perf_guard.sh.bak,fully-automated-ops/scripts/usr/local/sbin/perf_guard.sh.bak,34b8e9261ff8f478693134f45e3a69f7,#!/usr/bin/env bash
+/usr/local/sbin/sendmail_guard.py,fully-automated-ops/scripts/usr/local/sbin/sendmail_guard.py,e6675418ed192165ee36a7a010bc5573,#!/usr/bin/env python3
+/usr/local/sbin/panic_guard.sh,fully-automated-ops/scripts/usr/local/sbin/panic_guard.sh,dfa0854f06b435f2b1f2b54f72f529a1,#!/usr/bin/env bash
+/usr/local/sbin/daily_audit.sh,fully-automated-ops/scripts/usr/local/sbin/daily_audit.sh,b854944558c86f38bdf63b4b36762f9f,#!/usr/bin/env bash
+/usr/local/sbin/ci_check_scripts.sh,fully-automated-ops/scripts/usr/local/sbin/ci_check_scripts.sh,34f87e7fecf5dfba3e5dfb99a5b7f420,#!/usr/bin/env bash
+/usr/local/sbin/fix_empty_clauses.py,fully-automated-ops/scripts/usr/local/sbin/fix_empty_clauses.py,09d6e71a0cbd0aa94b3b6c5018d92d11,#!/usr/bin/env python3
+/usr/local/sbin/moodle_prepare_minor_update.sh,fully-automated-ops/scripts/usr/local/sbin/moodle_prepare_minor_update.sh,48fa9304d3b3c5cc2b7c256f1080ef18,#!/usr/bin/env bash
+/usr/local/sbin/cleanup_home_txt.sh,fully-automated-ops/scripts/usr/local/sbin/cleanup_home_txt.sh,8c6f00b3ff35c5000febd9d0d52f0634,#!/usr/bin/env bash
+/usr/local/sbin/moodle_free_inodes.sh,fully-automated-ops/scripts/usr/local/sbin/moodle_free_inodes.sh,94982b87551e1d5792d18f2c9ccb1a85,#!/usr/bin/env bash
+/usr/local/sbin/mailpass_rotate.sh,fully-automated-ops/scripts/usr/local/sbin/mailpass_rotate.sh,ef11a79dbdad2e459967637c28b7cf16,#!/usr/bin/env bash
+/usr/local/sbin/migrate_mail_env.sh,fully-automated-ops/scripts/usr/local/sbin/migrate_mail_env.sh,552b3a061da10da65ab52a3bd358a63f,#!/usr/bin/env bash
+/usr/local/sbin/perf_guard.sh,fully-automated-ops/scripts/usr/local/sbin/perf_guard.sh,d01e11316074aab6fe3fd77f9f5a34b8,#!/usr/bin/env bash
+/usr/local/sbin/moodle_minor_update_500.sh,fully-automated-ops/scripts/usr/local/sbin/moodle_minor_update_500.sh,1a9e6033fd0ab0c9e724b793df682713,#!/usr/bin/env bash
+/usr/local/sbin/smtp_535_watcher.sh,fully-automated-ops/scripts/usr/local/sbin/smtp_535_watcher.sh,de16eac8c518877517cec7593f3d8e9a,#!/usr/bin/env bash
+/usr/local/sbin/moodle_autocare.sh,fully-automated-ops/scripts/usr/local/sbin/moodle_autocare.sh,69c0d78e3b91b54fc57b71a676daf787,#!/usr/bin/env bash
+/usr/local/sbin/web_guard.sh,fully-automated-ops/scripts/usr/local/sbin/web_guard.sh,d0c077ead079e658c25a36aa7cdf4dd7,#!/usr/bin/env bash

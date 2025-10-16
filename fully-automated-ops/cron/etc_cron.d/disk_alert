@@ -1,0 +1,9 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=""
+
+# Gmail App Password
+ALERT_EMAIL_PASSWORD=_bgnervlqydpxuehp
+
+# 每天 09:00 以 ubuntu 用户执行
+0 9 * * * ubuntu /usr/bin/python3 /home/ubuntu/disk_alert.py >> /var/log/disk_alert.log 2>&1

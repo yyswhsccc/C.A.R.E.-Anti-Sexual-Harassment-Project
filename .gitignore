@@ -17,3 +17,11 @@ Thumbs.db
 moodledata/
 config.php
 *.env
+# safety
+**/*.log
+**/*.pid
+**/*.sock
+**/*.tar
+**/*.zip
+**/*.gz
+secrets/

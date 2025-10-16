@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=""
+
+# 每天 09:15 运行清理，日志写入 /var/log/moodle_inode_cleanup.log
+15 9 * * * root /usr/local/sbin/moodle_free_inodes.sh >> /var/log/moodle_inode_cleanup.log 2>&1

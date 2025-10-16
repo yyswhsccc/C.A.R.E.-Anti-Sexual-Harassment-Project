@@ -1,0 +1,16 @@
+[Unit]
+Description=Post-boot health check and email
+Wants=network-online.target
+After=network-online.target mysql.service apache2.service prometheus.service alertmanager.service
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+ExecStart=/bin/bash -lc '/home/ubuntu/postboot_healthcheck.sh'
+Nice=5
+
+[Install]
+WantedBy=multi-user.target
+
+

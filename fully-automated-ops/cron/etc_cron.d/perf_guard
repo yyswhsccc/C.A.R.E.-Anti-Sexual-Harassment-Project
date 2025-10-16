@@ -1,0 +1,4 @@
+CRON_TZ=America/Edmonton
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+40 3 * * 0 root nice -n 10 ionice -c3 /usr/local/sbin/perf_guard.sh

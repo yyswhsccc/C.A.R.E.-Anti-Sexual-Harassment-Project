@@ -1,0 +1,7 @@
+[Unit]
+Description=Run net_guard probe/repair
+[Service]
+Type=oneshot
+Nice=10
+IOSchedulingClass=idle
+ExecStart=/usr/local/sbin/net_guard.sh
