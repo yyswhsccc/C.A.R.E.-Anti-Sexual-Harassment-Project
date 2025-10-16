@@ -1,4 +1,4 @@
-# courage-to-act-moodle
+# C.A.R.E. Anti-Sexual Harassment Project
 
 Courage to Act - Moodle Gamification Project
 
