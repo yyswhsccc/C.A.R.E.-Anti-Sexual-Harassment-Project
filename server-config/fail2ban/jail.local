@@ -1,0 +1,7 @@
+[DEFAULT]
+backend = systemd
+
+[sshd]
+enabled = true
+port    = ssh
+mode    = aggressive
