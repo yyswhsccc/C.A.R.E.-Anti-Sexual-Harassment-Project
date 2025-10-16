@@ -8,10 +8,9 @@ Courage to Act - Moodle Gamification Project
 
 ## Project Overview
 
-This project is a Moodle-based gamification plugin (or custom module) developed for the Courage to Act initiative. The goal is to extend Moodle's learning platform with features that foster engagement, motivation, and positive behavior change.
+This project powers Courage to Act’s Moodle site with a light gamification layer—small nudges that make participation feel rewarding and keep learners moving forward. It’s designed to extend Moodle in practical ways, not overwhelm it: clear progress cues, gentle challenges, and room to grow as content evolves.
 
-Infrastructure configs + **fully-automated ops** scripts for a Moodle deployment.  
-This repo contains **sanitized** templates and examples — **no production data or secrets**.
+Alongside the learning pieces, this repository collects what keeps the site dependable in production: clean configuration templates, server settings, and **fully-automated ops** scripts for health checks, updates, and day-to-day housekeeping. Everything here is **sanitized**, no live credentials or user data. Use these examples as a starting point and plug in your own environment variables and secrets when deploying.
 
 ## Quick start (read-only)
 - Browse `server-config/` (Apache/PHP), `moodle/config.dist.php` (template), `infra/` (cron/systemd), `fully-automated-ops/` (bash/python).
